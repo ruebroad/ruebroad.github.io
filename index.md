@@ -5,6 +5,3 @@
 layout: default
 ---
 
-# Random Cloudy Thoughts
-
-A blog that won't be updated very often but hopefully contains stuff that someone might find useful
