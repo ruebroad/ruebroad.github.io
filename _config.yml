@@ -1,1 +1,27 @@
 theme: jekyll-theme-midnight
+title: "Random, Cloudy, DevOpsy Stuff"
+description: "A collection of things related to cloud devops and things I think are interesting"
+
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://ruebroad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: ruebroad
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+google_analytics: UA-161773166-1
+permalink: /blog/:year/:month/:day/:title
