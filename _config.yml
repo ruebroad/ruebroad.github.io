@@ -25,3 +25,6 @@ plugins:
 #   - vendor/ruby/
 google_analytics: UA-161773166-1
 permalink: /blog/:year/:month/:day/:title
+
+include:
+  - _pages
