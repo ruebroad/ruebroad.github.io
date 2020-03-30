@@ -1,6 +1,7 @@
 theme: jekyll-theme-midnight
 title: "Random, Cloudy, DevOpsy Stuff"
 description: "A collection of things related to cloud devops and things I think are interesting"
+avatar: images/bitmoji.png
 
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://ruebroad.github.io" # the base hostname & protocol for your site, e.g. http://example.com

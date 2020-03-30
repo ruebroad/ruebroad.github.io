@@ -8,3 +8,7 @@ _posts/2020-03-25-welcome-to-jekyll.markdown
 _posts/yyyy-mm-dd-title.md
 
 _atchive/
+
+_includes/svg-icons.html
+
+.DS_Store
