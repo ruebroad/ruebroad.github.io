@@ -14,7 +14,7 @@ The trouble started when I tried to pass json from Terraform to Python.
 
 The variables:
 
-``` (terraform)
+```terraform
 pipeline_vars = [{
     key     = "AWS_REGION"
     value   = "eu-west-1"
@@ -24,7 +24,7 @@ pipeline_vars = [{
 
 In the module:
 
-```(terraform)
+```terraform
 locals {
   pipelines    = jsonencode(var.pipeline_vars)
   build_command   = "python3 ${path.root}/scripts/config.py ${var.workspace} ${bitbucket_repository.main.slug} ${local.oauth_key} ${local.oauth_secret} ${local.pipelines}"
@@ -32,7 +32,7 @@ locals {
 
 Outputs:
 
-```(terraform)
+```terraform
 json = [
   {
     "key" = "AWS_REGION"
@@ -43,7 +43,7 @@ json = [
 
 So far so good, except the python script keeps failing with various forms of json related errors. I could see the variable getting passed correctly but something was getting lost in translation on the way to Python.
 
-```(terraform)
+```terraform
 (local-exec): Executing: ["/bin/sh" "-c" "python3 ./scripts/config.py my-workspace mytestrepo [{\"key\":\"AWS_REGION\",\"secured\":\"false\",\"value\":\"eu-west-1\"}]"]
 module.xops.module.test.null_resource.build[0] (local-exec): usage: config.py [-h]
 module.xops.module.test.null_resource.build[0] (local-exec):                  workspace repo_slug client_id client_secret deployments
@@ -57,20 +57,20 @@ Whether this is a bug in Terraform or "as intended" I've no idea. The solution/h
 
 Base64 encoding to the rescue! I knew the terraform was creating the json correctly because of the Terraform output and the python errors, so I only needed a way to ensure it didn't lose the formatting in transit. Encoding the variable in Terraform and then decoding it in Python did the trick.
 
-```(terraform)
+```terraform
 locals {
   pipelines_64    = base64encode(jsonencode(var.pipeline_vars))
   build_command   = "python3 ${path.root}/scripts/config.py ${var.workspace} ${bitbucket_repository.main.slug} ${local.oauth_key} ${local.oauth_secret} ${local.pipelines_64}"
 }
 ```
 
-```(python)
+```python
 if pipeline_vars_64 is not None:
         # Decode the encode parameters
         pipeline_vars = base64.b64decode(pipeline_vars_64).decode('ascii')
 ```
 
-```(terraform)
+```terraform
 module.xops.module.test.null_resource.build[0]: Provisioning with 'local-exec'...
 module.xops.module.test.null_resource.build[0] (local-exec): Executing: ["/bin/sh" "-c" "python3 ./scripts/config.py my-workspace mytestrepo W3siUHJvZHVjdGlvbiI6e30sIlN0YWdpbmciOnt9LCJUZXN0Ijp7ImRldiI6W3sia2V5IjoidGVzdDEiLCJvcmRlciI6IjEiLCJzZWN1cmVkI]
 module.xops.module.test.null_resource.build[0] (local-exec): Get oauth token

@@ -27,7 +27,7 @@ ERROR: Failed to build gem native extension.
 
     current directory: /usr/lib/ruby/gems/2.6.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
 /usr/bin/ruby -I /usr/lib/ruby/2.6.0 -r ./siteconf20200326-7-nrebfa.rb extconf.rb
-mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+mkmf.rb can\'t find header files for ruby at /usr/lib/ruby/include/ruby.h
 
 You might have to install separate package for the ruby development
 environment, ruby-dev or ruby-devel for example.
