@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Terraform Bitbucket Provider - Creating Repository & Deployment Variables"
 date: 2020-03-24
 categories: terraform bitbucket json jsonencode python

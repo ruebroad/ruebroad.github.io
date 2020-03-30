@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Installing Rubocop shouldn't be this difficult"
 date: 2020-03-26
 categories: rubocop, ruby, jaro_winkler, docker

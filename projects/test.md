@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
 title: "Test page"
-date: 2020-03-24
 categories: test
 ---
 
