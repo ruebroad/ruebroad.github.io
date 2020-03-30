@@ -24,7 +24,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 google_analytics: UA-161773166-1
-permalink: /blog/:year/:month/:day/:title
+# permalink: /blog/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title:output_ext
 
 include:
   - _pages
