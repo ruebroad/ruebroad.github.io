@@ -9,7 +9,6 @@ github_username: ruebroad
 
 # Build settings
 markdown: kramdown
-  input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
