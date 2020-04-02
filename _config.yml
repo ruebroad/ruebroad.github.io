@@ -19,6 +19,7 @@ markdown:
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-paginate # Adding pagination capability
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -39,3 +40,25 @@ baseurl: ""
 
 footer-links:
   github: ruebroad/ruebroad.github.io
+
+  nav:
+  Home:
+    - "/"
+  Blog:
+    - "/blog/"
+    - { Categories: "/blog/categories/" }
+    - { Tags: "/blog/tags/" }
+  Projects:
+    - "/projects/"
+  Github Project:
+    - "http://ruebroad.github.io/"
+
+paginate: 8
+paginate_path: "/blog/page:num"
+
+categories:
+  type: liquid
+  path: /categories/
+tags:
+  type: liquid
+  path: /tags/
