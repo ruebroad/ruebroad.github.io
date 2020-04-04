@@ -64,4 +64,5 @@ tags:
   path: /tags/
 
 collections:
-  - projects
+  projects:
+    output: true
