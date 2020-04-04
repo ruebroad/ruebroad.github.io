@@ -62,3 +62,6 @@ categories:
 tags:
   type: liquid
   path: /tags/
+
+collections:
+  - projects
