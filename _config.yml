@@ -50,6 +50,8 @@ footer-links:
     - { Tags: "/blog/tags/" }
   Projects:
     - "/projects/"
+    - { Categories: "/projects/categories/" }
+    - { Tags: "/projects/tags/" }
   Github Project:
     - "http://ruebroad.github.io/"
 
