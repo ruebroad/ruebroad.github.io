@@ -4,7 +4,6 @@ title: "Installing Rubocop shouldn't be this difficult"
 date: 2020-03-26
 categories: rubocop, ruby, jaro_winkler, docker
 ---
-
 Last time I needed to install rubocop in a container I hit the jaro_winkler install problem:
 
 ```(bash)
