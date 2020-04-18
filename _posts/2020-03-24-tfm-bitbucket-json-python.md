@@ -4,7 +4,7 @@ title: "Terraform Bitbucket Provider - Creating Repository & Deployment Variable
 date: 2020-03-24
 categories: terraform bitbucket json jsonencode python
 ---
-The Terraform Bitbucket provider doesn't currently have resources for deployment environments and variables or repository pipeline variables. Manually adding these is painful but there is an API that can help when coupled with Terraform null resource.
+The Terraform Bitbucket provider doesn't currently have resources for deployment environments and variables. Manually adding these is painful but there is an API that can help when coupled with Terraform null resource.
 
 So the plan was to use null resource to launch a python script that called the Bitbucket API and pass terraform map/list variables as json. Before tackling the Terraform code I made sure it all worked passing the json variables to python using a bash shell script. 
 
