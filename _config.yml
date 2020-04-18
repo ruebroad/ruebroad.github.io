@@ -19,6 +19,7 @@ markdown:
 theme: minima
 minima:
   skin: dark
+  date_format: "%d %B %Y"
 
 plugins:
   - jekyll-feed
