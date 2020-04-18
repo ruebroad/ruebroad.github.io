@@ -1,4 +1,3 @@
-theme: jekyll-theme-midnight
 title: "Random, Cloudy, DevOpsy Stuff"
 description: "A collection of things related to cloud devops and things I think are interesting"
 avatar: images/bitmoji.png
@@ -16,11 +15,17 @@ markdown:
   #   # Use existing pygments syntax highlighting css
   #   css_class: 'highlight'
 
+# theme: jekyll-theme-midnight
+theme: minima
+minima:
+  skin: dark
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate # Adding pagination capability
   - jekyll-sitemap
+  - jekyll-seo-tag
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
