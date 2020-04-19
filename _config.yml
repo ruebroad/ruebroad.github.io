@@ -3,8 +3,10 @@ description: "A collection of things related to cloud devops and things I think 
 avatar: images/bitmoji.png
 
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://ruebroad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: ruebroad
+linkedin_username: rupertbroad
 
 # Build settings
 markdown:
@@ -47,7 +49,6 @@ google_analytics: UA-161773166-1
 # permalink: /:categories/:year/:month/:day/:title:output_ext
 permalink: /:title
 
-baseurl: ""
 github_comments_repository: ruebroad/ruebroad-github-io-comments
 # footer-links:
 #   github: ruebroad/ruebroad.github.io
