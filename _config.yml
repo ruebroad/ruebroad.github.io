@@ -48,7 +48,7 @@ google_analytics: UA-161773166-1
 permalink: /:title
 
 baseurl: ""
-
+github_comments_repository: ruebroad/ruebroad-github-io-comments
 # footer-links:
 #   github: ruebroad/ruebroad.github.io
 

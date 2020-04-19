@@ -3,6 +3,7 @@ layout: post
 title: "Terraform for_each & list of maps"
 date: 2020-04-18
 categories: terraform
+github_comments_issueid: 1
 ---
 
 Writing a module for automating creation of bitbucket repositories I ran into a problem with repository variables. I wanted to use for_each to iterate through a list of maps of the variables. Sommething like this:
