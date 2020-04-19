@@ -51,7 +51,7 @@ footer-links:
 
   nav:
   Home:
-    - "/blog"
+    - "/blog/"
   Blog:
     - "/blog/"
     - { Categories: "/blog/categories/" }
