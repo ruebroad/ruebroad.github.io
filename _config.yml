@@ -20,6 +20,7 @@ theme: minima
 minima:
   skin: dark
   date_format: "%d %B %Y"
+show_excerpts: true
 
 plugins:
   - jekyll-feed
