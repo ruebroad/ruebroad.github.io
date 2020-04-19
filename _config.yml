@@ -22,6 +22,7 @@ minima:
   date_format: "%d %B %Y"
   social_links:
     linkedin: rupertbroad
+    github: ruebroad/ruebroad.github.io
 show_excerpts: true
 
 plugins:
@@ -48,22 +49,22 @@ permalink: /:title
 
 baseurl: ""
 
-footer-links:
-  github: ruebroad/ruebroad.github.io
+# footer-links:
+#   github: ruebroad/ruebroad.github.io
 
-  nav:
-  Home:
-    - "/blog/"
-  Blog:
-    - "/blog/"
-    - { Categories: "/blog/categories/" }
-    - { Tags: "/blog/tags/" }
-  Projects:
-    - "/projects/"
-    - { Categories: "/projects/categories/" }
-    - { Tags: "/projects/tags/" }
-  Github Project:
-    - "http://ruebroad.github.io/"
+# nav:
+#   Home:
+#     - "/blog/"
+#   Blog:
+#     - "/blog/"
+#     - { Categories: "/blog/categories/" }
+#     - { Tags: "/blog/tags/" }
+#   Projects:
+#     - "/projects/"
+#     - { Categories: "/projects/categories/" }
+#     - { Tags: "/projects/tags/" }
+#   Github Project:
+#     - "http://ruebroad.github.io/"
 
 paginate: 8
 paginate_path: "/blog/page:num"
