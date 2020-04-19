@@ -3,6 +3,7 @@ layout: post
 title: "Terraform Bitbucket Provider - Creating Repository & Deployment Variables"
 date: 2020-03-24
 categories: terraform bitbucket json jsonencode python
+github_comments_issueid: 3
 ---
 The Terraform Bitbucket provider doesn't currently have resources for deployment environments and variables. Manually adding these is painful but there is an API that can help when coupled with Terraform null resource.
 
