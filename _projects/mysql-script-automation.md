@@ -4,7 +4,7 @@ title: "Automating RDS Aurora/MySQL scripts"
 categories: test
 ---
 
-## Overview
+## MySQL Script Pipeline with Terraform, Jira & ServiceNow
 
 The current workflow for running SQL scripts against prod and pre-prod RDS databases involves connecting to a bastion host and using MySQL Workbench to run scripts manually. The ServiceNow change control process ensures there's a valid and approved CR before running the script. Approval implies that someone has validated the script to ensure it's correct and won't cause issues. In theory.
 
