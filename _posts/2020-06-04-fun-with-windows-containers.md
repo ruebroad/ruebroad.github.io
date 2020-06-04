@@ -37,7 +37,7 @@ Well, it seems that unlike when running Linux where you just pull latest and stu
 So there's actually a couple of ways to figure out which tag you need to pick from the massive list of tags for each windows image.
 
 ```(powershell)
-[System.Environment]::OSVersion.Version
+> [System.Environment]::OSVersion.Version
 
 Major  Minor  Build  Revision
 -----  -----  -----  --------
